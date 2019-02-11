@@ -1,2 +1,2 @@
-# Digital-Identification
-Digital ID project on iOS for personal identification exploration.
+# Digital Identification
+This is my personal iOS project for a digital ID.
