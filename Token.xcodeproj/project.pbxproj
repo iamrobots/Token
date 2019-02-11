@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638D0D65220FBEFF0044235C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638D0D64220FBEFF0044235C /* Address.swift */; };
 		63ED92F1220E527600E08FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED92F0220E527600E08FAB /* AppDelegate.swift */; };
-		63ED92F3220E527600E08FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED92F2220E527600E08FAB /* ViewController.swift */; };
-		63ED92F6220E527600E08FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED92F4220E527600E08FAB /* Main.storyboard */; };
+		63ED92F3220E527600E08FAB /* IDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED92F2220E527600E08FAB /* IDViewController.swift */; };
 		63ED92F8220E527900E08FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63ED92F7220E527900E08FAB /* Assets.xcassets */; };
 		63ED92FB220E527900E08FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ED92F9220E527900E08FAB /* LaunchScreen.storyboard */; };
+		63ED9305220E771400E08FAB /* IDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED9304220E771400E08FAB /* IDViewModel.swift */; };
+		63ED9307220E774100E08FAB /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ED9306220E774100E08FAB /* Identity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		638D0D64220FBEFF0044235C /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		63ED92ED220E527600E08FAB /* Token.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Token.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ED92F0220E527600E08FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63ED92F2220E527600E08FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63ED92F5220E527600E08FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63ED92F2220E527600E08FAB /* IDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDViewController.swift; sourceTree = "<group>"; };
 		63ED92F7220E527900E08FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63ED92FA220E527900E08FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63ED92FC220E527900E08FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63ED9304220E771400E08FAB /* IDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDViewModel.swift; sourceTree = "<group>"; };
+		63ED9306220E774100E08FAB /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		63ED92EF220E527600E08FAB /* Token */ = {
 			isa = PBXGroup;
 			children = (
+				63ED9308220E774700E08FAB /* Models */,
+				63ED9302220E76E700E08FAB /* View Controllers */,
 				63ED92F0220E527600E08FAB /* AppDelegate.swift */,
-				63ED92F2220E527600E08FAB /* ViewController.swift */,
-				63ED92F4220E527600E08FAB /* Main.storyboard */,
 				63ED92F7220E527900E08FAB /* Assets.xcassets */,
 				63ED92F9220E527900E08FAB /* LaunchScreen.storyboard */,
 				63ED92FC220E527900E08FAB /* Info.plist */,
 			);
 			path = Token;
+			sourceTree = "<group>";
+		};
+		63ED9302220E76E700E08FAB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63ED9303220E76F400E08FAB /* ID */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		63ED9303220E76F400E08FAB /* ID */ = {
+			isa = PBXGroup;
+			children = (
+				63ED92F2220E527600E08FAB /* IDViewController.swift */,
+				63ED9304220E771400E08FAB /* IDViewModel.swift */,
+			);
+			path = ID;
+			sourceTree = "<group>";
+		};
+		63ED9308220E774700E08FAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63ED9306220E774100E08FAB /* Identity.swift */,
+				638D0D64220FBEFF0044235C /* Address.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +154,6 @@
 			files = (
 				63ED92FB220E527900E08FAB /* LaunchScreen.storyboard in Resources */,
 				63ED92F8220E527900E08FAB /* Assets.xcassets in Resources */,
-				63ED92F6220E527600E08FAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63ED92F3220E527600E08FAB /* ViewController.swift in Sources */,
+				63ED92F3220E527600E08FAB /* IDViewController.swift in Sources */,
 				63ED92F1220E527600E08FAB /* AppDelegate.swift in Sources */,
+				63ED9305220E771400E08FAB /* IDViewModel.swift in Sources */,
+				63ED9307220E774100E08FAB /* Identity.swift in Sources */,
+				638D0D65220FBEFF0044235C /* Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63ED92F4220E527600E08FAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63ED92F5220E527600E08FAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63ED92F9220E527900E08FAB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LSTZFWCKPG;
 				INFOPLIST_FILE = Token/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrobots.Token;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LSTZFWCKPG;
 				INFOPLIST_FILE = Token/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamrobots.Token;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
